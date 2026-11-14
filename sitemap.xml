@@ -4,7 +4,7 @@
   <url>
     <loc>https://rubing.us.kg/posts/33881.html</loc>
     
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-11-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,16 @@
   <url>
     <loc>https://rubing.us.kg/posts/23538.html</loc>
     
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-11-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rubing.us.kg/photos/index.html</loc>
+    
+    <lastmod>2026-11-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://rubing.us.kg/movies/index.html</loc>
-    
-    <lastmod>2026-05-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://rubing.us.kg/photos/index.html</loc>
     
     <lastmod>2026-05-11</lastmod>
     
