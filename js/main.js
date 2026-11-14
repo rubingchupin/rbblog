@@ -9,9 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const adjustMenu = init => {
     let hideMenuIndex = false
 
+    // 仅初始化时测量一次，resize 时直接复用缓存宽度，保证响应速度与官方一致
     if (init) {
       const blogInfoWidth = Array.from(document.querySelector('#blog-info > a').children).reduce((w, i) => w + i.offsetWidth, 0)
-      const menusWidth = Array.from(document.getElementById('menus').children).reduce((w, i) => w + i.offsetWidth, 0)
+      const menusItems = document.querySelector('#menus .menus_items')
+      const menusWidth = menusItems ? menusItems.offsetWidth : 0
       const navRight = document.getElementById('nav-right')
       const navRightWidth = navRight ? Array.from(navRight.children).reduce((w, i) => w + i.offsetWidth, 0) : 0
       headerContentWidth = blogInfoWidth + menusWidth + navRightWidth
