@@ -399,9 +399,14 @@
   };
 
   // 自动初始化：页面中存在 #calendar 时自动渲染
-  $(function() {
+  function initCalendar() {
     if (document.getElementById('calendar')) {
       $('#calendar').aCalendar('zh-CN');
     }
-  });
+  }
+
+  $(initCalendar);
+
+  // pjax 切换后 #body-wrap（含侧边栏日历）会被整体替换，需重新渲染日历
+  document.addEventListener('pjax:complete', initCalendar);
 }(jQuery));
